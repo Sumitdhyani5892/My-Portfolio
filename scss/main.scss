@@ -1,5 +1,45 @@
 $primary-color:#444;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: $primary-color;
+    background-color: $primary-color;
+}
+
+
+
+
+
+
+.cont-1 {
+  
+    .gap {
+    
+    margin-top:7rem;
+    margin-left:10%;
+    padding-top: 30px;
+}
+
+
+     .heading {
+    padding:0.8rem 1.5rem;
+    background: lighten($primary-color, 3);
+}
+
+.icons {
+    margin-top:20px;
+
+    a {
+        padding-left:6px;
+    }
+}
+}
+
+
+a {
+    color:#fff;
 }

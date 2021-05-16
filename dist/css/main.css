@@ -1,2 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
-  background: #444; }
+  background-color: #444; }
+
+.cont-1 .gap {
+  margin-top: 7rem;
+  margin-left: 10%;
+  padding-top: 30px; }
+
+.cont-1 .heading {
+  padding: 0.8rem 1.5rem;
+  background: #4c4c4c; }
+
+.cont-1 .icons {
+  margin-top: 20px; }
+  .cont-1 .icons a {
+    padding-left: 6px; }
+
+a {
+  color: #fff; }
