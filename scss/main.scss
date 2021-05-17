@@ -1,4 +1,8 @@
-$primary-color:#444;
+$primary-color:#555;
+$secondary-color:#ff8c00;
+$show-home-image:true;
+$home-image:url(../img/technologyunsplash.jpg);
+$background-opacity:0.9;
 
 * {
     box-sizing: border-box;
@@ -6,19 +10,39 @@ $primary-color:#444;
     padding: 0;
 }
 
-body {
-    background-color: $primary-color;
+@mixin easeOut {
+    transition: all 0.6s ease-in-out;
 }
 
+@mixin background {
+    @if $show-home-image {
+        &#bg-image {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
 
+            .overlay {
+                position: absolute;
+                top:0;
+                right:0;
+                width:100%;
+                height:100%;
+                background: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+}
 
+body {
+    @include background;
+    background-color: $primary-color;
+}
 
 
 
 .cont-1 {
   
     .gap {
-    
     margin-top:7rem;
     margin-left:10%;
     padding-top: 30px;
@@ -34,7 +58,13 @@ body {
     margin-top:20px;
 
     a {
-        padding-left:6px;
+        
+        padding-left:12px;
+
+        span:hover {
+            color:$secondary-color;
+            @include easeOut();
+        }
     }
 }
 }
@@ -43,3 +73,4 @@ body {
 a {
     color:#fff;
 }
+
