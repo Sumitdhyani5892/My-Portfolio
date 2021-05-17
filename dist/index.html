@@ -14,15 +14,19 @@
 	<title>my portfolio</title>
 </head>
 
-<body id="bg-image" class="overlay">
+<body id="bg-image">
+	
 	<nav class="navbar">
 		<a href="#" class="navbar-brand">
 			<img src="img/sumit.jpg" alt="" width="40px" />
 		</a>
-		<button class="navbar-toggler navbar-dark s" type="button" data-toggle="collapse"
+		<button class="navbar-toggler collapsed navbar-dark" id="button" type="button" data-toggle="collapse"
 			data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
 			aria-label="toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<span class="my-1 mx-2 close text-dark">X</span>
+			<span class="navbar-toggler-icon" id="hamburger"></span>
+			
+			
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav mr-auto">
@@ -61,6 +65,8 @@
 		</div>
 	</div>
 
+
+	<script src="js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>

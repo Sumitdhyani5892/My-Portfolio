@@ -1,36 +1,9 @@
-$primary-color:#555;
-$secondary-color:#ff8c00;
-$show-home-image:true;
-$home-image:url(../img/technologyunsplash.jpg);
-$background-opacity:0.9;
+@import 'config';
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-@mixin easeOut {
-    transition: all 0.6s ease-in-out;
-}
-
-@mixin background {
-    @if $show-home-image {
-        &#bg-image {
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
-
-            .overlay {
-                position: absolute;
-                top:0;
-                right:0;
-                width:100%;
-                height:100%;
-                background: rgba($primary-color, $background-opacity);
-            }
-        }
-    }
 }
 
 body {
@@ -51,7 +24,7 @@ body {
 
      .heading {
     padding:0.8rem 1.5rem;
-    background: lighten($primary-color, 3);
+    background: lighten($primary-color, 2);
 }
 
 .icons {
@@ -74,3 +47,9 @@ a {
     color:#fff;
 }
 
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
