@@ -7,7 +7,7 @@ $background-opacity:0.7;
 
 
 @mixin easeOut {
-    transition: all 2.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 @mixin background {
