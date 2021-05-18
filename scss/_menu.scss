@@ -28,12 +28,13 @@
         height:100vh;
         background:lighten($primary-color,6);
         transform: translate3d(0, 100%, 0);
-        @include easeOut;
+            @include easeOut;
 
-        &.show {
-            transform: translate3d(0,0,0);
-        }
+            &.show {
+                transform: translate3d(0,0,0);
+            }
 
+        
         .image {
         position: absolute;
         top:45%;
@@ -70,13 +71,17 @@
             & a:hover {
                 color:$secondary-color;
             }
+
+            
+                
+
+               
+            
     
     }
 
         
-    }
-
-     
-
+     }
    
 }
+
