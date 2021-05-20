@@ -21,7 +21,7 @@
         opacity: 0.8;
 
 
-    .col-6.box{
+    .box{
         top:0%;
         left:0; 
         width:50%;
@@ -39,6 +39,8 @@
         position: absolute;
         top:45%;
         left:30%;
+        height:30%;
+        width:30%;
         border: 3px solid yellow;
         border-radius: 50%;
     
@@ -46,7 +48,7 @@
 
    }
 
-     .col-6.box-1{
+     .box-1{
         width:50%;
         height:100vh;
         background:darken($primary-color,5);
@@ -58,11 +60,12 @@
         }
         
 
-        .navbar-nav {
+       ul {
             position: absolute;
-            top:42%;
-            left:30%;
+            top:42% !important;
+            left:30% !important;
             color:#fff;
+           
 
             & a {
                 font-size: 30px;

@@ -1,0 +1,99 @@
+// for ipad or small laptops
+@include mediamd {
+     nav {
+         .navbar-collapse {
+      position: fixed;
+        top:0%;
+        left:0;
+        padding:0 25px;
+        width:100%;
+        height:100vh;
+        color:#fff;
+        opacity: 0.8;
+
+         .box{
+             top:0;
+             left:0;
+             width:100%;
+             height: 50vh;
+             background:lighten($primary-color,10);
+             transform: translate3d(-100%,0,0);
+             @include easeOut; 
+
+             &.show {
+                transform: translate3d(0,0,0);
+            }
+
+          
+               
+         .image  {
+        top:10%;
+        left:30%;
+        height:40%;
+        width:50%;
+        border: 3px solid green;
+        border-radius: 50%;
+        
+
+        
+         }
+
+     }
+
+     .box-1 {
+         width:100%;
+         height:50vh;
+         background: darken($primary-color,4);
+         transform: translate3d(100%,0,0);
+             @include easeOut; 
+
+              &.show {
+                transform: translate3d(0,0,0);
+            }
+
+         ul {
+             position: absolute;
+            top:22% !important;
+            left:30% !important;
+            color:#fff;
+            
+
+            & a {
+                font-size: 25px;
+                
+            }
+            & a:hover {
+                color:$secondary-color;
+            }
+         }
+
+     }
+        }
+
+     }
+
+    }
+
+    // for smartphones 
+    @include mediasm {
+         nav {
+             .box-1 {
+                 ul a:hover {
+                     color:$secondary-color;
+                 }
+             }
+         }
+
+
+        .cont-1 {
+            h1 {
+                font-size: 40px;
+                margin-top:5rem;
+            }
+            .heading {
+                  font-size: 18px;
+                  padding:6px;
+                  margin-left: -1.5rem;
+            }
+        }
+    }
