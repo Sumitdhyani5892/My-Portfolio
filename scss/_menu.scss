@@ -41,6 +41,7 @@
         left:30%;
         height:30%;
         width:30%;
+        z-index:1;
         border: 3px solid yellow;
         border-radius: 50%;
     
@@ -73,18 +74,89 @@
             }
             & a:hover {
                 color:$secondary-color;
+            }         
+    }
+ }
+   }
+
+
+   .cont-2 {
+       
+        .gap {
+            margin-top:10px;
+            margin-left:40%;
+          
+            .image {
+                width:20%;
+               height:25%;
+               border: 3px solid $secondary-color;
+               border-radius: 50%;
             }
 
             
-                
+                h1{
+                  margin-left:-2rem;
+                }
+                h4 {
+                    position: relative;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                   margin-left:-2rem;
+                   background: linear-gradient(90deg, #90EE90, #fff, #000);
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+                     animation: animate 10s infinite;
+                   -webkit-background-clip: text;
+                    background-clip:text;
+                   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                }
 
-               
-            
-    
-    }
-
-        
-     }
-   
+                 @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }           
 }
 
+p{
+    margin-left: -28rem !important;
+    text-align: center;
+    font-size: 25px;
+
+    span {
+        font-family: cursive;
+    }
+}
+   }
+   }
+
+   section {
+       margin-top:2rem;
+       margin-left:3rem;
+
+       .head-1 {
+           position: relative;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           background: linear-gradient(90deg,#000, #fff, #000);
+           background-repeat: no-repeat;
+           background-size: 80%;
+           animation: animated 8s linear infinite;
+           -webkit-background-clip: text;
+           background-clip:text;
+           -webkit-text-fill-color:rgba(255,255,255,0);
+
+       }
+
+       @keyframes animated {
+               0% {
+                   background-position:-500%;
+
+               }
+
+               100% {
+                   background-position:500%;
+                   
+               }
+           }
+   }

@@ -11,7 +11,9 @@
 body {
     @include background;
     background-color: $primary-color;
-    overflow:hidden;
+    height:60rem;
+    width:100%;
+    
 }
 
 
