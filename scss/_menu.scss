@@ -185,7 +185,11 @@ body {
 
 // contact me page 
 body {
+   
     &#body-4 {
+      width:100%;
+    height:70rem;
+
         .gap-1 {
           margin:4rem !important;
 
@@ -207,6 +211,18 @@ body {
 					width: 600px !important;
 					height: 400px !important;
 				}
+        }
+
+        section {
+            h4 {
+               &.hover:hover {
+                   padding:0.6rem 1.5rem !important;
+                   cursor: pointer;
+                   background-color:greenyellow !important;
+                   @include easeOut;
+               }   
+                
+            }
         }
        
     }
